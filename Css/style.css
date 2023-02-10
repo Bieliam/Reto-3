@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(219, 19%, 35%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+    font-family: 'Overpass';
+}
+.container{
+    border-radius: 15px;
+    background-color: var(--DarkBlue);
+    margin: 150px auto;
+    width: 345px;
+    height: 360px;
+    line-height: 25px;
+}
+.grid{
+    display: grid;
+    /* display: none; */
+    margin: 2.5% 5%;
+    height: 100%;
+    grid-template-columns: 310px;
+    grid-template-rows: 15% 50% 20% 15% ;
+}
+.imagen__presentacion{
+    grid-row: 1/2;
+}
+.star{
+    margin: 5% auto ;
+    background-color: var(--MediumGrey) ;
+    border-radius: 25px;
+    padding: 5px;
+}
+.texto{
+    grid-row: 2/3;
+}
+.titulo{
+    margin-bottom: 30px;
+}
+.cuerpo{
+    color: var(--MediumGrey);
+}
+.rated{
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-around;
+}
+.raters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    color: var(--MediumGrey);
+    background-color: var(--LightGrey);
+    border-radius: 50px;
+}
+.raters:hover{
+    cursor: pointer;
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.boton{
+    letter-spacing: 2px;
+    height: 40px;
+    font-size: 12px;
+    background-color: var(--Orange);
+    border-radius: 25px;
+    color: var(--White);
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+
+.Grid2{
+    display: none;
+    /* display: grid; */
+    margin: auto 5%;
+    height: 100%;
+    grid-template-columns: 310px;
+    grid-template-rows: 40% 15% 30% ;
+}
+.imagen__agradecimiento{
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture{
+    height: 100px;
+    width: 150px;
+}
+.rating{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+    width: 170px;
+    font-size: 15px;
+    color: var(--Orange);
+    background-color: var(--LightGrey);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.texto2{
+    grid-row: 3/4;
+    text-align: center;
+}
+.attribution{
+    font-size: 11px; text-align: center; 
+    color: hsl(228, 52%, 68%); 
+}
+a{
+    color: wheat;
+    text-decoration: none;
+}
